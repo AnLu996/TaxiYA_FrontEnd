@@ -1,0 +1,253 @@
+﻿body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0cm;
+}
+
+/*::::::::::::HEADER::::::::::::::::*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 17%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    padding: 30px 20px;
+    z-index: 10;
+    background: #000000;
+}
+
+header.abajo {
+    background: #001F3D;
+    padding: 30px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo {
+    height: 32vh;
+    position: relative;
+    top: -7vh;
+    transition: 1.5s;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    font-family: 'REM', sans-serif;
+    font-size: 3vh;
+    margin: 0 20px;
+    text-decoration: none;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.7s;
+}
+
+
+/*:::::::::::::::::::INICIO:::::::::::::::::*/
+
+.inicio {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(Imagenes/aqpF1.jpg);
+    opacity: 0.9;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    margin-top:0;
+}
+
+.inicio .text {
+    position: absolute;
+    top: 5vh;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inicio .img {
+    height: 20vh;
+    position: relative;
+    top: 10vh;
+    transition: 1.5s;
+}
+
+.inicio .text h1 {
+    font-size: 16vh;
+    color: #ffffff;
+    font-family: kaftus;
+}
+
+.inicio .text h2 {
+    font-size: 8vh;
+    color: #ffffff;
+    font-family: 'Kanit', sans-serif;
+}
+
+.inicio .text h3 {
+    font-size: 6vh;
+    color: #ffffff;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+/*:::::::::::::::::::NOSOTROS:::::::::::::::::*/
+.nosotros h2 {
+    font-size: 6vh;
+    color: #000000;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.nosotros p {
+    color: #000000;
+    /*letter-spacing: 1px;
+    margin-top: 30px;
+    line-height: 28px;*/
+    font-size: 2.5vh;
+    font-family: 'Questrial', sans-serif;
+}
+
+.nosotros img {    
+    width: 120%;
+    height: 100%;
+}
+
+
+/*::::::::::SERVICIO:::::::::::::*/
+.cover {
+    height: 600px;
+    background-image: src(Imagenes/aqpF1.jpg);
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 39, 148, 0.6);
+    background-blend-mode: darken;
+}
+/*sobre el boton*/
+.btn-dark {
+    background-color: #77a0ec;
+    color: #000000;
+    font-size: 18px;
+}
+/*sobre los conteiners*/
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    color: #000000;
+    font-size: 25px;
+    font-family: Raleway,sans-serif;
+}
+
+.card-text {
+    color: #000000;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.card-img-top {
+    max-width: 50%;
+    height: 50%;
+    display: block;
+    margin: 10px auto;
+}
+
+
+
+/*::::::::::FOOTER:::::::::::::*/
+.pie-pagina {
+    width: 100%;
+    background: #001F3D;
+    margin-top: 10vh;
+}
+.pie-pagina .grupo1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+    color:white
+}
+.pie-pagina .grupo1 .zona figure {
+    width: 100%;
+    height: 100%;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo1 .zona strong {
+    font-size: 15px;
+}
+.pie-pagina .grupo1 .zona .figure img {
+    height: 10vh;
+    position: relative;
+}
+.pie-pagina .grupo1 .zona .figure h2 {
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-family: 'REM', sans-serif;
+}
+.pie-pagina .grupo1 .zona .figure h3 {
+    margin-bottom: 25px;
+    font-size: 15px;
+    font-family: 'REM', sans-serif;
+}
+.pie-pagina .grupo1 .zona p {
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo1 .red-social a:hover {
+    color: beige;
+}
+.pie-pagina .grupo2 {
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo2 small {
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
